@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Week 3";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+<div class="text-center">
+    <h1 class="display-4">Week 3 Assignment</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- start card -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="attentionSeeker">Select your balloons</h5>
+                    <form id="balloonForm">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" name="black" id="black" />
+                            <label class="form-check-label" for="black">Black</label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" name="blue" id="blue"/>
+                            <label class="form-check-label" for="blue">Blue</label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" name="green" id="green" />
+                            <label class="form-check-label" for="green">Green</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" id="submit">Submit</button>
+                        <button type="button" class="btn btn-outline-primary" id="toggleBalloonButton">Toggle checkboxes</button>
+                    </form>
+                </div>
+            </div>
+            <div class="toast" data-autohide="false">
+                <div class="toast-header">
+                    <h1>Select some balloons</h1>
+                </div>
+                <div class="toast-body">
+                    <h1>You haven't selected balloons, you must be a bad friend</h1>
+                    <button class="btn btn-primary" id="backButton" data-dismiss="toast">Close Toast</button>
+                </div>
+            </div>
+            <!-- end card -->
+        </div>
+        <div class="col-md-6">
+            <img src="img/black.png" id="blackImg" />
+            <img src="img/blue.png" id="blueImg" />
+            <img src="img/green.png" id="greenImg" />
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script type="text/javascript" src="js/Week3.js"></script>
+}
